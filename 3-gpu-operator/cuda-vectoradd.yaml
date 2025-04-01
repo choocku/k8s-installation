@@ -6,7 +6,7 @@ spec:
   restartPolicy: Never
   containers:
   - name: pytorch-container
-    image: nvcr.io/nvidia/pytorch:22.08-py3
+    image: nvcr.io/nvidia/k8s/cuda-sample:vectoradd-cuda11.7.1-ubuntu20.04
     command: ["nvidia-smi"]
     resources:
       limits:
