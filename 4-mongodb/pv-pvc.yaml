@@ -9,15 +9,3 @@ spec:
     - ReadWriteOnce
   hostPath:
     path: /oagid_nfs/mongodb
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mongodb-pvc
-spec:
-  storageClassName: ""
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5Gi
