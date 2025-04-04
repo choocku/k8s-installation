@@ -25,7 +25,7 @@ spec:
         - containerPort: 27017
         volumeMounts:
         - name: volume1
-          mountPath: /oagid_nfs/db
+          mountPath: /data/db
         - name: keyfile
           mountPath: /etc/mongodb-keyfile
           readOnly: true
