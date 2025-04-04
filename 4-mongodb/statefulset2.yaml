@@ -45,7 +45,7 @@ spec:
   - metadata:
       name: mongodb-pvc
     spec:
-      accessModes: ["ReadWriteOnce"]
+      accessModes: ["ReadWriteMany"]
       resources:
         requests:
           storage: 5Gi
