@@ -7,5 +7,5 @@ spec:
     storage: 5Gi
   accessModes:
     - ReadWriteOnce
-  hostPath:
+  local:
     path: /oagid_nfs/mongodb
