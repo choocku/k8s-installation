@@ -43,7 +43,7 @@ spec:
           defaultMode: 0400  
   volumeClaimTemplates:
   - metadata:
-      name: mongodb-storage
+      name: mongodb-pvc
     spec:
       accessModes: ["ReadWriteOnce"]
       resources:
