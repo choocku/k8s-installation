@@ -24,8 +24,8 @@ spec:
         ports:
         - containerPort: 27017
         volumeMounts:
-        - name: mongodb-pvc
-          mountPath: /data/db
+        - name: mongodb-storage
+          mountPath: /oagid_nfs/db
         - name: keyfile
           mountPath: /etc/mongodb-keyfile
           readOnly: true
@@ -43,7 +43,7 @@ spec:
           defaultMode: 0400  
   volumeClaimTemplates:
   - metadata:
-      name: mongodb-pvc
+      name: mongodb-storage
     spec:
       accessModes: ["ReadWriteOnce"]
       resources:
