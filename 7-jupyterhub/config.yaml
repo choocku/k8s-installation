@@ -1,4 +1,6 @@
 singleuser:
+  networkTools:
+    enabled: false
   storage:
     dynamic:
       storageClass: nfs-client
