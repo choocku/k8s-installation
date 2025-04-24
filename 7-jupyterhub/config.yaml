@@ -1,7 +1,5 @@
 singleuser:
-  initContainers: []
-  networkTools:
-    enabled: false
+  extraInitContainers: []
   networkPolicy:
     enabled: false
   storage:
