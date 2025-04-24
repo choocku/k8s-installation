@@ -1,8 +1,9 @@
 singleuser:
   initContainers: []
+  networkTools:
+    enabled: false
   networkPolicy:
     enabled: false
   storage:
     dynamic:
       storageClass: nfs-client
-  
