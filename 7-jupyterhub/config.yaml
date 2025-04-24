@@ -1,1 +1,14 @@
+singleuser:
+  storage:
+    type: dynamic
+      storageClass: nfs-client
+    capacity: 10Gi
+  extraVolumeMounts:
+    - name: homme
+      mountPath: /home/jovyan
 
+  extraVolumes:
+    - name: home
+      persistentVolumeClaim:
+        claimName: claim-{username} 
+  
