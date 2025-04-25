@@ -3,7 +3,6 @@ singleuser:
     blockWithIptables: false
   networkPolicy:
     enabled: false
-    singleuser:
   storage:
     dynamic:
       storageClass: nfs-client
