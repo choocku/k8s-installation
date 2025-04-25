@@ -4,12 +4,8 @@ singleuser:
   networkPolicy:
     enabled: false
   storage:
-    homeMountPath: /home/jovyan
     dynamic:
       storageClass: nfs-client
-      pvcNameTemplate: claim-{username}
-      volumeNameTemplate: volume-{username}
-      subPath: home/{username}
   profileList:
     - display_name: "GPU Server"
       description: "Spawns a notebook server with access to a GPU"
