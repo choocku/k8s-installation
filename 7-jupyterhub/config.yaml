@@ -19,4 +19,4 @@ hub:
     LDAPAuthenticator:
       bind_dn_template:
         - cn={username},cn=users,cn=accounts,dc=oagid,dc=local
-      server_address: ai-lb.oagid.local
+      server_address: 172.16.6.52
