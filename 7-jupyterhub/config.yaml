@@ -18,5 +18,5 @@ hub:
       authenticator_class: ldapauthenticator.LDAPAuthenticator
     LDAPAuthenticator:
       bind_dn_template:
-        - cn={username},cn=users,cn=accounts,dc=oagid,dc=local
+        - uid={username},cn=users,cn=accounts,dc=oagid,dc=local
       server_address: 172.16.6.52
