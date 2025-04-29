@@ -20,3 +20,5 @@ hub:
       bind_dn_template:
         - uid={username},cn=users,cn=accounts,dc=oagid,dc=local
       server_address: 172.16.6.52
+      allowed_users:
+        - peeranon
