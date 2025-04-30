@@ -3,6 +3,9 @@ singleuser:
     blockWithIptables: false
   networkPolicy:
     enabled: false
+  storage:
+    dynamic:
+      storageClass: nfs-client
   profileList:
     - display_name: "GPU Server"
       description: "Spawns a notebook server with access to a GPU"
