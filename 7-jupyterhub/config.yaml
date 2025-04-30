@@ -17,10 +17,9 @@ hub:
     JupyterHub:
       authenticator_class: ldapauthenticator.LDAPAuthenticator
     LDAPAuthenticator:
+      allowed_groups:
+        - cn=jupyterhub,cn=groups,dc=oagid,dc=local
       bind_dn_template:
         - uid={username},cn=users,cn=accounts,dc=oagid,dc=local
       server_address: 172.16.6.52
-      allowed_users:
-        - peeranon
-      allowed_groups:
-        - cn=jupyterhub,cn=groups,dc=oagid,dc=local
+      escape_userdn: false
