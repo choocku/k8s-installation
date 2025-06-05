@@ -1,4 +1,7 @@
 singleuser:
+  image:
+    name: choocku/my-jupyterhub
+    tag: latest
   cloudMetadata:
     blockWithIptables: false
   networkPolicy:
