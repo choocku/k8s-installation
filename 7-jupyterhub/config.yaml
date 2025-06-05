@@ -1,17 +1,9 @@
-prePuller:
-  hook:
-    enabled: true
-  continuous:
-    enabled: true
-  imagePullSecret:
-    - name: choocku-regcred
-
 singleuser:
   image:
     name: choocku/my-jupyterhub
     tag: latest
     pullPolicy: Always
-  imagePullSecret:
+    pullSecrets:
     - name: choocku-regcred
   cloudMetadata:
     blockWithIptables: false
