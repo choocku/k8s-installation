@@ -1,10 +1,4 @@
 singleuser:
-  image:
-    name: choocku/my-jupyterhub
-    tag: latest
-    pullPolicy: Always
-    pullSecrets:
-    - name: choocku-regcred
   cloudMetadata:
     blockWithIptables: false
   networkPolicy:
